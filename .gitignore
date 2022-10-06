@@ -1,2 +1,3 @@
 venv-mtv
 __pycache__
+db.sqlite3
