@@ -19,6 +19,8 @@ from . import views
 
 urlpatterns = [
     path('view/', views.view ), 
-    path('mi-template/', views.mi_template),
+    path('template/<str:nombre>', views.el_template),
+    path('crear-familiar/<str:nombre>/<str:apellido>/<str:parentezco>/<int:edad>', views.crear_familiar),
+    path('ver-familia/', views.ver_familia),
     path('admin/', admin.site.urls),
 ]
